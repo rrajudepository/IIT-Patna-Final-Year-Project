@@ -57,13 +57,16 @@ The project introduces a **multifractal-based denoising** pipeline:
 
 **PSNR Calculation:**
 
-\[
-\text{PSNR} = 20 \log \frac{\max(s(x))}{\sqrt{\text{MSE}}}
-\]
+**PSNR Calculation**
 
-\[
-\text{MSE} = \frac{1}{MN} \sum_{i,j} |s(x) - s_r(x)|^2
-\]
+$$
+\mathrm{PSNR} = 20 \log_{10}\!\left( \frac{\max(s(x))}{\sqrt{\mathrm{MSE}}} \right)
+$$
+
+$$
+\mathrm{MSE} = \frac{1}{MN} \sum_{i,j} \left| s(x) - s_{r}(x) \right|^2
+$$
+
 
 ---
 
